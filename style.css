@@ -1,0 +1,21 @@
+/* || GENERAL STYLES (estilos gerais) || */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* || NAVBAR (barra de navegação) || */
+
+.navbar {
+    width: 100%;
+
+    background-color: #df3333;
+    
+    color: white;
+    text-align: center;
+}
