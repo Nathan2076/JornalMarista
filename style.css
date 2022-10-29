@@ -1,21 +1,138 @@
+/*
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│ Organization structure based on the following guides:                         │
+│ Estrutura de organização baseada nos seguintes guias:                         │
+│                                                                               │
+│ https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62   │
+│ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+*/
+
+
+/* || VARIABLES || */
+
+:root {
+    --blue-light: #005288;
+    --blue-dark: #003764;
+    --red: #de0000;
+}
+
+
 /* || GENERAL STYLES (estilos gerais) || */
+
+* {
+    font-family: adobe-garamond-pro, serif;
+}
 
 body {
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 
 /* || NAVBAR (barra de navegação) || */
 
 .navbar {
-    width: 100%;
+    position: relative;
+    height: 128px;
 
-    background-color: #df3333;
+    background-color: var(--blue-light);
     
     color: white;
     text-align: center;
+}
+
+/* | Logo | */
+
+.div {
+    height: 80px;
+}
+
+.logo {
+    height: 64px;
+    margin: 8px;
+}
+
+/* | Sections (cadernos) | */
+
+nav {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+}
+
+.sections {
+    display: flex;
+
+    width: 689px;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.sections li {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.sections li:hover div {
+    width: 100%;
+}
+
+.section {
+    width: 16px;
+    height: 4px;
+
+    background-color: white;
+
+    transition: width .15s;
+}
+
+.section2 {
+    width: 16px;
+    height: 4px;
+    margin: auto;
+
+    background-color: white;
+
+    transition: width .15s;
+}
+
+.section3 {
+    width: 0;
+    height: 4px;
+
+    background-color: white;
+
+    transition: width .15s;
+}
+
+.section4 {
+    width: 0;
+    height: 4px;
+    margin: auto;
+
+    background-color: white;
+
+    transition: width .15s;
+}
+
+.interioridades {
+    transition: background-color .15s;
+}
+
+.interioridades:hover {
+    background-color: #0096D7;
+}
+
+.fotografia {
+    transition: color .15s;
+}
+
+.fotografia:hover {
+    color: #0096D7;
 }
