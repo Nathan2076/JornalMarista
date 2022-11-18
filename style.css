@@ -1,21 +1,140 @@
+/*
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│ Organization structure based on the following guides:                         │
+│ Estrutura de organização baseada nos seguintes guias:                         │
+│                                                                               │
+│ https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62   │
+│ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+*/
+
+
+/* || VARIABLES || */
+
+:root {
+    --blue-light: #005288;
+    --blue-dark: #003764;
+    --red: #de0000;
+}
+
+
 /* || GENERAL STYLES (estilos gerais) || */
+
+* {
+    font-family: adobe-garamond-pro, serif;
+}
 
 body {
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 
 /* || NAVBAR (barra de navegação) || */
 
 .navbar {
-    width: 100%;
+    position: relative;
+    height: 128px;
 
-    background-color: #df3333;
+    background-color: var(--blue-light);
     
+    color: white;
+    text-align: center;
+}
+
+/* | Logo | */
+
+.div {
+    height: 80px;
+    text-align: left;
+}
+
+.logo {
+    height: 64px;
+    margin: 8px;
+    margin-top: 25px;
+}
+
+/* | Sections (cadernos) | */
+
+nav {
+    position: absolute;
+    top: 45px;
+    left: 255px;
+
+    width: 50%;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sections {
+    display: flex;
+
+    width: 689px;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.sections li {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.sections li:hover div {
+    width: 100%;
+}
+
+.section {
+    width: 16px;
+    height: 4px;
+    margin: auto;
+
+    background-color: white;
+
+    transition: width .15s;
+}
+
+.cities { 
+    background-color: #173963;
+}
+
+.sports {
+    background-color: #36BBA5;
+}
+
+.social {
+    background-color: rgb(60, 133, 211);
+}
+
+.zn {
+    background-color: #F15B4E;
+}
+
+.interioridades {
+    color: var(--blue-light);
+    
+    background-color: #FDB933;
+}
+
+.fotografia {
+    background-color: #5fc8d7;
+}
+
+footer {
+    width: 100%;
+    height: 32px;
+
+    background-color: var(--blue-light);
+
+    font-family: Arial, Helvetica, sans-serif;
+
     color: white;
     text-align: center;
 }
