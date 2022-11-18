@@ -22,7 +22,7 @@
 
 /* || GENERAL STYLES (estilos gerais) || */
 
-* {
+.headline {
     font-family: adobe-garamond-pro, serif;
 }
 
@@ -72,12 +72,19 @@ nav ul li a {
     text-decoration: none;
 }
 
+@font-face {
+    font-family: torus;
+    src: url(../JornalMarista/assets/fonts/torus/regular.otf);
+}
+
 .sections {
     display: flex;
 
     width: 689px;
     margin: 0 auto;
     padding: 0;
+
+    font-family: torus;
 
     list-style-type: none;
 }
@@ -110,7 +117,7 @@ nav ul li a {
 }
 
 .social {
-    background-color: rgb(60, 133, 211);
+    background-color: #3777BC;
 }
 
 .zn {
@@ -124,6 +131,8 @@ nav ul li a {
 }
 
 .fotografia {
+    color: var(--blue-light);
+
     background-color: #5fc8d7;
 }
 
