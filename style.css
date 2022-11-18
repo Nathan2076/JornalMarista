@@ -101,13 +101,16 @@ nav ul li a {
     transition: width .15s;
 }
 
-.cities {
+.cities { 
+    background-color: #173963;
 }
 
 .sports {
+    background-color: #36BBA5;
 }
 
 .social {
+    background-color: rgb(60, 133, 211);
 }
 
 .zn {
@@ -121,6 +124,7 @@ nav ul li a {
 }
 
 .fotografia {
+    background-color: #5fc8d7;
 }
 
 footer {
