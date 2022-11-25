@@ -22,7 +22,7 @@
 
 /* || GENERAL STYLES (estilos gerais) || */
 
-* {
+.headline {
     font-family: adobe-garamond-pro, serif;
 }
 
@@ -32,9 +32,22 @@ body {
 }
 
 
+/* || UTILITIES (utilidades) || */
+
+.blue {
+    background-color: var(--blue-light);
+}
+
+.white {
+    background-color: white;
+}
+
+
 /* || NAVBAR (barra de navegação) || */
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     height: 128px;
 
@@ -72,12 +85,19 @@ nav ul li a {
     text-decoration: none;
 }
 
+@font-face {
+    font-family: torus;
+    src: url(../JornalMarista/assets/fonts/torus/regular.otf);
+}
+
 .sections {
     display: flex;
 
-    width: 689px;
-    margin: 0 auto;
+    width: 646px;
+    margin: 0;
     padding: 0;
+
+    font-family: torus;
 
     list-style-type: none;
 }
@@ -96,8 +116,6 @@ nav ul li a {
     height: 4px;
     margin: auto;
 
-    background-color: white;
-
     transition: width .15s;
 }
 
@@ -110,7 +128,7 @@ nav ul li a {
 }
 
 .social {
-    background-color: rgb(60, 133, 211);
+    background-color: #3777BC;
 }
 
 .zn {
@@ -124,10 +142,14 @@ nav ul li a {
 }
 
 .fotografia {
+    color: var(--blue-light);
+
     background-color: #5fc8d7;
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     height: 32px;
 
@@ -137,4 +159,8 @@ footer {
 
     color: white;
     text-align: center;
+}
+
+footer p {
+    margin: 7px;
 }
