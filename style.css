@@ -32,9 +32,22 @@ body {
 }
 
 
+/* || UTILITIES (utilidades) || */
+
+.blue {
+    background-color: var(--blue-light);
+}
+
+.white {
+    background-color: white;
+}
+
+
 /* || NAVBAR (barra de navegação) || */
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     height: 128px;
 
@@ -80,8 +93,8 @@ nav ul li a {
 .sections {
     display: flex;
 
-    width: 689px;
-    margin: 0 auto;
+    width: 646px;
+    margin: 0;
     padding: 0;
 
     font-family: torus;
@@ -102,8 +115,6 @@ nav ul li a {
     width: 16px;
     height: 4px;
     margin: auto;
-
-    background-color: white;
 
     transition: width .15s;
 }
