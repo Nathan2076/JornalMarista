@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: Torus;
-    src: url(../JornalMarista/assets/fonts/torus/regular.otf);
+    src: url(assets/fonts/torus/regular.otf);
 }
 
 
@@ -37,8 +37,11 @@
 
 /* || GENERAL STYLES (estilos gerais) || */
 
-.headline {
-    font-family: adobe-garamond-pro, serif;
+.headline, .summary {
+    /* font-family: adobe-garamond-pro, serif; */
+    font-family: torus;
+
+    text-align: center;
 }
 
 body {
@@ -46,27 +49,14 @@ body {
     padding: 0;
 }
 
-p {
-    margin: 0px 150px 5px 150px;
-    
+article {
+    margin: auto;
+    padding: 0 100px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
     text-align: justify;
-}
-
-h1, h2 {
-    margin: 0px 0px 0px 0px;
-
-    text-align: center;
-}
-
-h3 {
-    margin: 5px 0px 30px 0px;
-    padding: 0px 275px 0px 275px;
-
-    text-align: center;
-}
-
-h1, h5{
-    font-family: adobe-garamond-pro, sans-serif;
+    line-height: 1.5em;
 }
 
 .img{
@@ -185,14 +175,6 @@ nav ul li a {
     color: var(--default-light);
 
     background-color: var(--cyan);
-}
-
-article h1, article h5 {
-    font-family: adobe-garamond-pro, serif;
-}
-
-article p {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
