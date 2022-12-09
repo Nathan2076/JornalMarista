@@ -1,0 +1,225 @@
+/*
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│ Organization structure based on the following guides:                         │
+│ Estrutura de organização baseada nos seguintes guias:                         │
+│                                                                               │
+│ https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62   │
+│ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+*/
+
+/* || VARIABLES (variáveis) || */
+
+/* Colors (cores) */
+
+:root {
+    --blue: #3777BC;
+    --blue-dark: #173963;
+    --cyan: #5fc8d7;
+    --green: #36BBA5;
+    --red: #F15B4E;
+    --yellow: #FDB933;
+}
+
+
+/* || GENERAL STYLES (estilos gerais) || */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.img{
+    width: 60%;
+    margin: auto;
+    display: block;
+
+    padding-bottom: 27px;
+}
+
+/* || UTILITIES (utilidades) || */
+
+.blue {
+    background-color: var(--blue-dark);
+}
+
+.white {
+    background-color: white;
+}
+
+
+/* || NAVBAR (barra de navegação) || */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 128px;
+
+    background-color: var(--blue-dark);
+    
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+
+/* | Logo | */
+
+.div {
+    height: 80px;
+    text-align: left;
+}
+
+.logo {
+    height: 64px;
+    margin: 8px;
+    margin-top: 25px;
+}
+
+/* | Sections (cadernos) | */
+
+nav {
+    position: absolute;
+    top: 45px;
+    left: 255px;
+
+    width: 50%;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sections {
+    display: flex;
+
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+
+    font-family: Torus;
+
+    list-style-type: none;
+}
+
+.sections li {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.sections li:hover div {
+    width: 100%;
+}
+
+.section {
+    width: 16px;
+    height: 4px;
+    margin: auto;
+
+    transition: width .15s;
+}
+
+.cities { 
+    background-color: var(--blue-dark);
+}
+
+.sports {
+    background-color: var(--green);
+}
+
+.social {
+    background-color: var(--blue);
+}
+
+.zn {
+    background-color: var(--red);
+}
+
+.interioridades {
+    color: var(--blue-dark);
+    
+    background-color: var(--yellow);
+}
+
+.fotografia {
+    color: var(--blue-dark);
+
+    background-color: var(--cyan);
+}
+
+
+/* || ARTICLE (artigo) || */
+
+article {
+    margin: 50px 100px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.headline, .summary {
+    font-family: Torus, sans-serif;
+
+    text-align: center;
+}
+
+.section-tag {
+    width: fit-content;
+    margin: auto;
+    padding: 0 8px;
+
+    border-radius: 8px;
+
+    font-family: Torus, sans-serif;
+    font-size: 0.75em;
+
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+
+.section-tag a {
+    color: white;
+    text-decoration: none;
+}
+
+.article-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-info h5 {
+    margin: 4px 0;
+}
+
+
+/* || FOOTER (rodapé) || */
+
+.footer {
+    padding: 32px 0;
+
+    background-color: var(--blue-dark);
+
+    text-align: center;
+    user-select: none;
+}
+
+/* | Social networks (redes sociais) | */
+
+.medias {
+    height: 32px;
+    padding-top: 16px;
+}
+
+.medias img {
+    padding: 0 4px;
+}
